@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ControllerJanelaMarioGame">
+   <children>
+      <TableView fx:id="tableView" layoutX="17.0" layoutY="23.0" prefHeight="268.0" prefWidth="432.0" AnchorPane.leftAnchor="17.0" AnchorPane.topAnchor="23.0">
+        <columns>
+          <TableColumn fx:id="cEstadoAnterior" prefWidth="99.0" resizable="false" text="estado anterior" />
+          <TableColumn fx:id="cEventoOcorrido" prefWidth="122.0" resizable="false" text="evento ocorrido" />
+            <TableColumn fx:id="cEstadoAtual" prefWidth="117.0" resizable="false" text="estado atual" />
+            <TableColumn fx:id="cPontos" prefWidth="93.0" resizable="false" text="pontos" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnPegarFlor" layoutX="111.0" layoutY="319.0" mnemonicParsing="false" onAction="#pegarFlor" prefHeight="49.0" prefWidth="90.0" text="Pegar Flor" AnchorPane.leftAnchor="111.0" AnchorPane.topAnchor="319.0" />
+      <Button fx:id="btnLevarDano" layoutX="299.0" layoutY="319.0" mnemonicParsing="false" onAction="#levarDano" prefHeight="49.0" prefWidth="90.0" text="Levar Dano" AnchorPane.leftAnchor="299.0" AnchorPane.topAnchor="319.0" />
+      <Button fx:id="btnPegarPena" layoutX="205.0" layoutY="319.0" mnemonicParsing="false" onAction="#pegarPena" prefHeight="49.0" prefWidth="90.0" text="Pegar Pena" AnchorPane.leftAnchor="205.0" AnchorPane.topAnchor="319.0" />
+      <Button fx:id="btnPegarCogumelo" layoutX="17.0" layoutY="319.0" mnemonicParsing="false" onAction="#pegarCogumelo" prefHeight="49.0" prefWidth="90.0" text="Pegar Cogumelo" textAlignment="CENTER" wrapText="true" AnchorPane.leftAnchor="17.0" />
+      <Button fx:id="btnRestartGame" layoutX="462.0" layoutY="344.0" mnemonicParsing="false" onAction="#restartGame" prefHeight="26.0" prefWidth="223.0" text="Reiniciar Jogo" AnchorPane.leftAnchor="462.0" AnchorPane.topAnchor="344.0" />
+      <ImageView fx:id="imageView" fitHeight="309.0" fitWidth="216.0" layoutX="462.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="462.0" AnchorPane.topAnchor="23.0" />
+      <Button fx:id="btnRandom" layoutX="393.0" layoutY="319.0" mnemonicParsing="false" onAction="#eventoSurpresa" prefHeight="49.0" prefWidth="56.0" text="?" AnchorPane.leftAnchor="393.0" AnchorPane.topAnchor="319.0" />
+   </children>
+</AnchorPane>
